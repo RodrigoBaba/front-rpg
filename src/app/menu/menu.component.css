@@ -1,0 +1,40 @@
+.font{
+    font-family: "Dark elf";
+    font-weight: 900;
+    font-size: 30pt;
+}
+.font:hover{
+    color: rgb(194, 168, 55) !important;
+}
+
+.font3{
+    font-family: "Dark elf";
+    font-weight: 900;
+    font-size: 20pt;
+    color: white;
+}
+
+.font2{
+    font-family: "Dark elf";
+    font-weight: 900;
+    font-size: 20pt;
+    color: white;
+}
+.font2:hover{
+    color: rgb(194, 168, 55) !important;
+}
+
+@font-face {
+    font-family:"Dark elf";
+    src: url("../../assets/Dark elf.otf") format("opentype");
+    font-weight: normal;
+    font-style: normal;
+
+    /* * Tipos de format()
+    *   - opentype (otf)
+    *   - truetype (ttf)
+    *   - embedded-opentype
+    *   - truetype-aat (Apple Advanced Typography)
+    *   - svg
+    * */     
+}

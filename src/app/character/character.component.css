@@ -1,0 +1,49 @@
+.bg_home{
+    background-image: url(/assets/img/bg_home_page.png);
+    background-position: top;
+    background-repeat: no-repeat;
+}
+
+.bgModal{
+    background-image: url(/assets/img/bgModal.png);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+#img2{
+    background-image: url(/assets/img/bg_form_register.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    
+}
+
+#buttonCharacter{
+    margin-top: 33%;
+    border-width: 0.5rem;
+    border-radius: 25% 2%;
+    font-size: 50pt;
+    font-family: "Dark elf";
+    font-weight: 900;
+    padding: 4rem;
+}
+
+.modalSpace{
+    margin-top: 50%;
+}
+/* .divButton{
+} */
+
+@font-face {
+    font-family:"Dark elf";
+    src: url("../../assets/Dark elf.otf") format("opentype");
+    font-weight: normal;
+    font-style: normal;
+
+    /* * Tipos de format()
+    *   - opentype (otf)
+    *   - truetype (ttf)
+    *   - embedded-opentype
+    *   - truetype-aat (Apple Advanced Typography)
+    *   - svg
+    * */     
+}

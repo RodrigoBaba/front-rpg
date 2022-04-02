@@ -1,0 +1,77 @@
+#forest{
+    background-image: url(/assets/img/Forest.png);
+    background-repeat: no-repeat;
+    background-size: auto;
+}
+
+
+#mountain{
+    background-image: url(/assets/img/Mountain.png);
+    background-repeat: no-repeat;
+    background-size: auto;
+    background-position: bottom;
+    height: 500px;
+}
+
+#castle{
+    background-image: url(/assets/img/Castle.png);
+    background-repeat: no-repeat;
+    background-size: auto;
+    background-position: bottom;
+}
+
+#bg_home{
+    background-image: url(/assets/img/bg_home_page.png);
+    background-position: top;
+    background-repeat: no-repeat;
+}
+
+#bord{
+    border-radius: 5%;
+}
+
+#arrowL{
+    margin-right: 5rem;
+}
+
+#arrowR{
+    margin-left: 5rem;
+}
+
+.text{
+    font-weight: 700;
+}
+
+.textColor{
+    font-weight: 700;
+    color: black;
+}
+
+.font{
+    font-family: "Dark elf";
+    font-weight: 900;
+    font-size: 14pt;   
+    color: white; 
+}
+
+.font2{
+    font-family: "Dark elf";
+    font-weight: 900;
+    font-size: 65pt;
+    color: rgb(194, 168, 55);    
+}
+
+@font-face {
+    font-family:"Dark elf";
+    src: url("../../assets/Dark elf.otf") format("opentype");
+    font-weight: normal;
+    font-style: normal;
+
+    /* * Tipos de format()
+    *   - opentype (otf)
+    *   - truetype (ttf)
+    *   - embedded-opentype
+    *   - truetype-aat (Apple Advanced Typography)
+    *   - svg
+    * */     
+}

@@ -1,0 +1,46 @@
+#img{
+    background-image: url(/assets/img/bg_login.jpg);
+    background-size: cover;
+}
+
+a{
+    text-decoration: none;
+    color: rgb(32, 30, 34);
+}
+
+a:hover{
+    color: rgb(194, 168, 55);
+}
+
+button:hover{
+    background-color: aqua;
+    border-color: aqua;
+}
+
+#borda{
+    border-radius: 3%;
+}
+
+#font{
+    font-family: "Dark elf";
+    font-weight: bold;
+}
+
+.fontInt{
+    font-family: monospace;
+}
+
+@font-face {
+    font-family:"Dark elf";
+    src: url("../../assets/Dark elf.otf") format("opentype");
+    font-weight: normal;
+    font-style: normal;
+
+    /* * Tipos de format()
+    *   - opentype (otf)
+    *   - truetype (ttf)
+    *   - embedded-opentype
+    *   - truetype-aat (Apple Advanced Typography)
+    *   - svg
+    * */     
+}

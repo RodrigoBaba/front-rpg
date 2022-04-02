@@ -1,0 +1,86 @@
+img{
+    width: 150px;    
+    height: 150px;
+    background-color: black;
+    margin: 1rem;
+    margin-left: 18rem;
+    border-radius: 5%;
+}
+
+img:hover{
+    background-color: rgb(194, 168, 55);
+}
+
+#bgKnight{
+    background-image: url("/assets/img/Knight.png");
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+#bgArcher{
+    background-image: url("/assets/img/Archer.png");
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+#bgMage{
+    background-image: url("/assets/img/Mage.png");
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+#bgAssassin{
+    background-image: url("/assets/img/Assassin.png");
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.bord{
+    border-color: rgb(194, 168, 55);
+}
+
+.text{
+    font-weight: 700;
+}
+
+.bgDark{
+    height: 25%;
+    background-color: #343a40;
+}
+
+.vocation{
+    font-family: "Dark elf";
+    font-weight: 900;
+    font-size: 65pt;
+}
+
+.title{
+    font-family: "Dark elf";
+    font-weight: 900;
+    font-size: 30pt;
+}
+
+.font{
+    font-family: "Dark elf";
+    font-weight: 600;
+    font-size: 20pt;
+}
+
+.col-md-6 :hover{
+    color: rgb(194, 168, 55);
+}
+
+@font-face {
+    font-family:"Dark elf";
+    src: url("../../assets/Dark elf.otf") format("opentype");
+    font-weight: normal;
+    font-style: normal;
+
+    /* * Tipos de format()
+    *   - opentype (otf)
+    *   - truetype (ttf)
+    *   - embedded-opentype
+    *   - truetype-aat (Apple Advanced Typography)
+    *   - svg
+    * */     
+}

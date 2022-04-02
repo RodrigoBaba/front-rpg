@@ -1,0 +1,65 @@
+<div class="row m-0">
+    <!-- ! Menu -->
+    <div class="col-md-2 p-0">
+        <app-menu></app-menu>
+    </div>
+    <!-- ! /Menu -->
+    <div class="col-md-10 vh-100 bg_home">
+
+        <!-- TODO Create Character -->
+        <div class="d-flex justify-content-center">
+            <div class="col-md-8 d-flex justify-content-center">
+                <button class="btn btn-outline-dark" id="buttonCharacter" data-toggle="modal" data-target="#create" type="button">Criar Personagem</button>
+
+                <div class="modal fade bgModal " id="create" data-keyboard="false" tabindex="-1"
+                    aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                    <div class="modal-dialog ">
+                        <div class="modal-content modalSpace" id="img2">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="staticBackdropLabel">Personagem</h5>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
+                            <div class="modal-body">
+                                <form>
+
+                                    <div class="form-group">
+                                        <label for="name">Nome</label>
+                                        <input type="text" class="form-control" id="name" placeholder="Nome do personagem">
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="race">Raça</label>
+                                        <select name="race" id="race" class="form-control">
+                                            <option>Escolha uma raça</option>
+                                            <option value="Elfo">Elfo</option>
+                                            <option value="Anao">Anão</option>
+                                            <option value="Humano">Humano</option>
+                                        </select>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="vocation">Vocação</label>
+                                        <select name="vocation" id="vocation" class="form-control">
+                                            <option>Escolha uma vocação</option>
+                                            <option value="Arqueiro">Arqueiro</option>
+                                            <option value="Mago">Mago</option>
+                                            <option value="Cavaleiro">Cavaleiro</option>
+                                            <option value="Assassino">Assassino</option>
+                                        </select>
+                                    </div>                                    
+                                    
+                                </form>
+                            </div>
+                            <div class="d-flex justify-content-center mb-3">
+                                <button type="button" class="btn btn-outline-success mr-2">Criar</button>
+                                <button type="button" class="btn btn-outline-danger ml-2" data-dismiss="modal">Cancelar</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- TODO /Create Character -->
+
+    </div>
+</div>

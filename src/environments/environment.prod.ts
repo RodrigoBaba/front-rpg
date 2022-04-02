@@ -1,3 +1,8 @@
 export const environment = {
-  production: true
+  production: true,
+  basicToken: "",
+  id: 0,
+  user: "",
+  email: ""
 };
+''

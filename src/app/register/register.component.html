@@ -1,0 +1,56 @@
+<div class="container-fluid bg-dark vh-100" id="img">
+    <div class="container d-flex justify-content-center mt-0">
+
+        <div class="col-md-8  mt-5" id="img2">
+
+            <div class="row d-flex justify-content-center">
+                <div class="col-md-10 my-5" id="font">
+
+                    <h1 class="mt-5">Cadastro</h1>
+
+                    <div class="form-group mt-5">
+                        <label for="user">Usuário</label>
+                        <input [(ngModel)]="user.user" class="form-control fontInt" type="text" name="user"
+                            placeholder="Digite seu usuário" (keyup)="validUser()">
+                        <div class="mt-2" id="user"></div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input [(ngModel)]="user.email" class="form-control fontInt" type="email" name="email" placeholder="Digite seu email" (keyup)="validEmail()">
+                        <div class="mt-2" id="email"></div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="senha">Senha</label>
+                        <input (input)="confirmPassword($event)" class="form-control fontInt" type="password" name="senha"
+                            placeholder="Digite sua senha" (keyup)="validPassword()">
+                        <div class="mt-2" id="password"></div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="confirmSenha">Confirmar senha</label>
+                        <input [(ngModel)]="user.password" class="form-control fontInt" type="password" name="confirmSenha" id="confirmSenha" placeholder="Confirme sua senha" (keyup)="validConfPassword()">
+                        <div class="mt-2" id="confirmPass"></div>
+                    </div>
+
+                    <div class="form-group">                       
+                        <div class="custom-control custom-switch">
+                            <input class="custom-control-input" type="checkbox" id="checkBox" (click)="validCheckBox()">
+                            <label class="custom-control-label" for="checkBox">
+                                Concordo com os termos <span id="warning"></span>
+                            </label>
+                            <div ></div>                            
+                        </div>
+                    </div>
+
+                    <div class="d-flex justify-content-center mt-5">
+                        <button class="btn btn-success mr-5" (click)="register()">Confirmar</button>
+
+                        <button class="btn btn-danger" routerLink="/login">Voltar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
