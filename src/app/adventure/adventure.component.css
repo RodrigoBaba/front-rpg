@@ -1,0 +1,69 @@
+#bg_home{
+    background-image: url(/assets/img/bg_home_page.png);
+    background-position: top;
+    background-repeat: no-repeat;
+}
+
+.font2{
+    font-family: "Dark elf";
+    font-weight: 900;
+    font-size: 65pt;
+    color: rgb(194, 168, 55);    
+}
+
+button{
+    border: 0;
+    outline-style: none;
+}
+
+.mbo{
+    margin-bottom: 5rem;
+}
+
+.mto{
+    margin-top: 5rem;
+}
+
+.mle{
+    margin-left: 5rem;
+}
+
+.mri{
+    margin-right: 5rem;
+}
+
+.mbo1{
+    margin-bottom: 7rem;
+}
+
+.mto1{
+    margin-top: 7rem;
+}
+
+.mle1{
+    margin-left: 7rem;
+}
+
+.mri1{
+    margin-right: 7rem;
+}
+
+.base{
+    width: 3.5rem;
+    border-radius: 50%;
+}
+
+@font-face {
+    font-family:"Dark elf";
+    src: url("../../assets/Dark elf.otf") format("opentype");
+    font-weight: normal;
+    font-style: normal;
+
+    /* * Tipos de format()
+    *   - opentype (otf)
+    *   - truetype (ttf)
+    *   - embedded-opentype
+    *   - truetype-aat (Apple Advanced Typography)
+    *   - svg
+    * */     
+}

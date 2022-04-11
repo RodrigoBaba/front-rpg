@@ -15,24 +15,28 @@ img:hover{
     background-image: url("/assets/img/Knight.png");
     background-repeat: no-repeat;
     background-position: center;
+    background-color: rgba(240, 240, 240, 0.8);
 }
 
 #bgArcher{
     background-image: url("/assets/img/Archer.png");
     background-repeat: no-repeat;
     background-position: center;
+    background-color: rgba(240, 240, 240, 0.8);
 }
 
 #bgMage{
     background-image: url("/assets/img/Mage.png");
     background-repeat: no-repeat;
     background-position: center;
+    background-color: rgba(240, 240, 240, 0.8);
 }
 
 #bgAssassin{
     background-image: url("/assets/img/Assassin.png");
     background-repeat: no-repeat;
     background-position: center;
+    background-color: rgba(240, 240, 240, 0.8);
 }
 
 .bord{
@@ -48,10 +52,16 @@ img:hover{
     background-color: #343a40;
 }
 
+.bg_home{
+    background-image: url(/assets/img/bg_home_page.png);
+    background-attachment: fixed;
+}
+
 .vocation{
     font-family: "Dark elf";
     font-weight: 900;
     font-size: 65pt;
+    color: rgb(194, 168, 55); 
 }
 
 .title{

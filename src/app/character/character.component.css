@@ -10,11 +10,37 @@
     background-position: center;
 }
 
+.bgJumb{
+    background-color: rgba(200,200,200,0.9);
+    border-radius: 5%;
+}
+
+.img{
+    background-color: black;
+    margin-left: 3rem;
+    margin-bottom: 1rem;
+    width: 50px;
+    height: 50px;
+}
+
+.img1{
+    background-color: black;
+    margin-bottom: 1rem;
+    width: 50px;
+    height: 50px;
+    border-radius: 5%;
+}
+
 #img2{
     background-image: url(/assets/img/bg_form_register.png);
     background-repeat: no-repeat;
     background-position: center;
     
+}
+
+.img3{
+    width: 20px;
+    height: 20px;
 }
 
 #buttonCharacter{
@@ -30,8 +56,30 @@
 .modalSpace{
     margin-top: 50%;
 }
-/* .divButton{
-} */
+
+.borderAt{
+    border-style: solid;
+    border-radius: 3%;
+}
+
+.font{
+    font-family: "Dark elf";
+    font-weight: 900;
+    font-size: 65pt;
+    color: rgb(194, 168, 55); 
+}
+
+.font1{
+    font-family: "Dark elf";
+    font-weight: 900;
+    font-size: 30pt;
+}
+
+.font2{
+    font-family: "Dark elf";
+    font-weight: 900;
+    font-size: 20pt;
+}
 
 @font-face {
     font-family:"Dark elf";

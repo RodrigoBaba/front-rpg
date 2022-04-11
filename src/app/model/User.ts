@@ -5,5 +5,5 @@ export class User{
     public user: string;
     public email: string;
     public password: string;
-    public character: CharacterModel;
+    public characterModel: CharacterModel;
 }

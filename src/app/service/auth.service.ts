@@ -1,4 +1,4 @@
-import { HttpClient } from '@angular/common/http';
+import { HttpClient, HttpHeaders } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { Router } from '@angular/router';
 import { Observable } from 'rxjs';
@@ -21,24 +21,38 @@ export class AuthService {
 
   ) { }
 
-    login(userLogin: UserLoginDTO) : Observable<UserCredentialsDTO>{
-      return this.http.post<UserCredentialsDTO>(this.local + "/user/login", userLogin);
-    }
+  basicToken = {
+    headers: new HttpHeaders().set('Authorization', environment.basicToken),
+  };
 
-    register(user: User) : Observable<User>{
-      return this.http.post<User>(this.local + "/user/register", user);
-    }
-    
-    createCharacter(user: User) : Observable<User>{
-      return this.http.put<User>(this.local + "/user/character", user)
-    }
+  refreshToken() {
+    this.basicToken = {
+      headers: new HttpHeaders().set('Authorization', environment.basicToken),
+    };
+  }
 
-    online(){
-      let ok: boolean = false;
+  getIdUser(id: number): Observable<User>{
+    return this.http.get<User>(`${this.local}/user/get/${id}`, this.basicToken);
+  }
 
-      if(environment.basicToken != ""){
-        ok = true;
-      }
-      return ok;
+  login(userLogin: UserLoginDTO): Observable<UserCredentialsDTO> {
+    return this.http.post<UserCredentialsDTO>(this.local + "/user/login", userLogin);
+  }
+
+  register(user: User): Observable<User> {
+    return this.http.post<User>(this.local + "/user/register", user);
+  }
+
+  createCharacter(user: User): Observable<User> {
+    return this.http.put<User>(this.local + "/user/character", user, this.basicToken);
+  }
+
+  online() {
+    let ok: boolean = false;
+
+    if (environment.basicToken != "") {
+      ok = true;
     }
+    return ok;
+  }
 }

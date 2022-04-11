@@ -1,6 +1,7 @@
 import { HttpClientModule } from "@angular/common/http";
 import { FormsModule } from "@angular/forms";
 import { HashLocationStrategy, LocationStrategy } from "@angular/common";
+import { ModalModule } from "ngx-bootstrap/modal";
 
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
@@ -15,6 +16,7 @@ import { MenuComponent } from './menu/menu.component';
 import { FooterComponent } from './footer/footer.component';
 import { VocationComponent } from './vocation/vocation.component';
 import { CharacterComponent } from './character/character.component';
+import { AdventureComponent } from './adventure/adventure.component';
 
 @NgModule({
   declarations: [
@@ -26,13 +28,15 @@ import { CharacterComponent } from './character/character.component';
     MenuComponent,
     FooterComponent,
     VocationComponent,
-    CharacterComponent
+    CharacterComponent,
+    AdventureComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
-    FormsModule 
+    FormsModule,
+    ModalModule.forRoot(), 
   ],
   providers: [{
     provide: LocationStrategy,
